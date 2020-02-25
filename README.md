@@ -22,6 +22,7 @@ placed on a
 
 ### Used Libraries
 This project uses libraries and code by different authors:
+
 For Arduino IDE:
 
 https://github.com/njh/EtherCard EtherCard is a driver for the Microchip ENC28J60 chip
