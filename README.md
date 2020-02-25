@@ -9,11 +9,16 @@ But for now, it works.
 ![Diagram](https://github.com/Allday3D/GH03/blob/master/flow_dashboard.JPG)
 
 ## Used Hardware
-The project is based on the ENC28J60, placed on a Nano (ATmega328P).
--4 way relayboard.
--MP1584EN module.
--Four switches (4 buttons and 10K resistors).
--12 volt powersupply.
+The project is based on the
+- ENC28J60,
+
+placed on a
+
+- Nano (ATmega328P).
+- 4 way relayboard.
+- MP1584EN module.
+- Four switches (4 buttons and 10K resistors).
+- 12 volt powersupply.
 
 ### Used Libraries
 This project uses libraries and code by different authors:
