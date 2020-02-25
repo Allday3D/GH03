@@ -18,6 +18,7 @@ Four switches (4 buttons and 10K resistors).
 ### Used Libraries
 This project uses libraries and code by different authors:
 For Arduino IDE:
+
 https://github.com/njh/EtherCard EtherCard is a driver for the Microchip ENC28J60 chip
 
 https://github.com/lexus2k/ssd1306 SSD1306 driver is Arduino style C/C++ library
@@ -25,6 +26,7 @@ https://github.com/lexus2k/ssd1306 SSD1306 driver is Arduino style C/C++ library
 https://github.com/PaulStoffregen/Time the Arduino Time Library
 
 For Node-RED:
+
 https://flows.nodered.org/node/node-red-contrib-schedex
 
 ## To Do
