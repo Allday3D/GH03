@@ -8,7 +8,7 @@ But for now, it works.
 
 ![Diagram](https://github.com/Allday3D/GH03/blob/master/flow_dashboard.JPG)
 
-## The Hardware
+## Used Hardware
 The project is based on the ENC28J60, placed on a Nano (ATmega328P).
 4 way relayboard.
 MP1584EN module.
@@ -27,7 +27,7 @@ https://github.com/PaulStoffregen/Time the Arduino Time Library
 For Node-RED:
 https://flows.nodered.org/node/node-red-contrib-schedex
 
-### To Do
+## To Do
 
 What about using MDNS!?
 
