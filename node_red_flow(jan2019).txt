@@ -1,0 +1,924 @@
+[
+    {
+        "id": "fd07c5cd.d40ea",
+        "type": "inject",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "15872f70.301229"
+            ]
+        ]
+    },
+    {
+        "id": "15872f70.301229",
+        "type": "http request",
+        "z": "7e3966ad.fb178",
+        "name": "set LED 1",
+        "method": "GET",
+        "ret": "txt",
+        "url": "http://192.168.2.201/a",
+        "tls": "",
+        "x": 500,
+        "y": 80,
+        "wires": [
+            [
+                "8d183cf1.ec4b38"
+            ]
+        ]
+    },
+    {
+        "id": "3168f899.0469f8",
+        "type": "inject",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 120,
+        "y": 260,
+        "wires": [
+            [
+                "c3ccc626.41bec"
+            ]
+        ]
+    },
+    {
+        "id": "c3ccc626.41bec",
+        "type": "http request",
+        "z": "7e3966ad.fb178",
+        "name": "set LED 2",
+        "method": "GET",
+        "ret": "txt",
+        "url": "http://192.168.2.201/b",
+        "tls": "",
+        "x": 500,
+        "y": 260,
+        "wires": [
+            [
+                "ec2b9911.b66dc8"
+            ]
+        ]
+    },
+    {
+        "id": "df2bc3d1.1dea98",
+        "type": "inject",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 120,
+        "y": 440,
+        "wires": [
+            [
+                "498b28d9.de839"
+            ]
+        ]
+    },
+    {
+        "id": "498b28d9.de839",
+        "type": "http request",
+        "z": "7e3966ad.fb178",
+        "name": "set LED 3",
+        "method": "GET",
+        "ret": "txt",
+        "url": "http://192.168.2.201/c",
+        "tls": "",
+        "x": 500,
+        "y": 440,
+        "wires": [
+            [
+                "172a2f63.64acd9"
+            ]
+        ]
+    },
+    {
+        "id": "6ff7be3b.94bf1",
+        "type": "inject",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 120,
+        "y": 620,
+        "wires": [
+            [
+                "9a94c973.5c069"
+            ]
+        ]
+    },
+    {
+        "id": "9a94c973.5c069",
+        "type": "http request",
+        "z": "7e3966ad.fb178",
+        "name": "set LED 4",
+        "method": "GET",
+        "ret": "txt",
+        "url": "http://192.168.2.201/d",
+        "tls": "",
+        "x": 500,
+        "y": 620,
+        "wires": [
+            [
+                "2758b006.224d28"
+            ]
+        ]
+    },
+    {
+        "id": "494cd7ed.3797c",
+        "type": "ui_button",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "group": "bb73f5e2.f24cd",
+        "order": 10,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "4",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 330,
+        "y": 600,
+        "wires": [
+            [
+                "9a94c973.5c069"
+            ]
+        ]
+    },
+    {
+        "id": "e33a83b8.eaa4e8",
+        "type": "ui_button",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "group": "bb73f5e2.f24cd",
+        "order": 7,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "3",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 330,
+        "y": 420,
+        "wires": [
+            [
+                "498b28d9.de839"
+            ]
+        ]
+    },
+    {
+        "id": "9185a491.6ee578",
+        "type": "ui_button",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "group": "bb73f5e2.f24cd",
+        "order": 4,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "2",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "c3ccc626.41bec"
+            ]
+        ]
+    },
+    {
+        "id": "8a58b404.83a068",
+        "type": "ui_button",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "group": "bb73f5e2.f24cd",
+        "order": 1,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "1",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 330,
+        "y": 60,
+        "wires": [
+            [
+                "15872f70.301229"
+            ]
+        ]
+    },
+    {
+        "id": "acf70c54.26bf1",
+        "type": "change",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 100,
+        "wires": [
+            [
+                "15872f70.301229"
+            ]
+        ]
+    },
+    {
+        "id": "1f769403.31dadc",
+        "type": "ui_text",
+        "z": "7e3966ad.fb178",
+        "group": "bb73f5e2.f24cd",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.topic}}",
+        "layout": "row-left",
+        "x": 490,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "c62220a5.3f9f28",
+        "type": "ui_text",
+        "z": "7e3966ad.fb178",
+        "group": "bb73f5e2.f24cd",
+        "order": 3,
+        "width": "2",
+        "height": "1",
+        "name": "indicator",
+        "label": "LED 1",
+        "format": "<font color={{msg.payload}} ><i class=\"fa fa-lightbulb-o fa-2x\" style=\"font-size:48px;\"></i></font>",
+        "layout": "row-spread",
+        "x": 500,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a7256a06.23ef",
+        "type": "schedex",
+        "z": "7e3966ad.fb178",
+        "name": "gh3 timer 1",
+        "suspended": false,
+        "lat": "52.37143972274518",
+        "lon": "5.214771426766971",
+        "ontime": "09:00",
+        "ontopic": "Timer on",
+        "onpayload": "yellow",
+        "onoffset": 0,
+        "onrandomoffset": 0,
+        "offtime": "15:00",
+        "offtopic": "Timer off",
+        "offpayload": "gray",
+        "offoffset": 0,
+        "offrandomoffset": 0,
+        "mon": true,
+        "tue": true,
+        "wed": true,
+        "thu": true,
+        "fri": true,
+        "sat": true,
+        "sun": true,
+        "x": 170,
+        "y": 160,
+        "wires": [
+            [
+                "1f769403.31dadc",
+                "c62220a5.3f9f28",
+                "acf70c54.26bf1"
+            ]
+        ]
+    },
+    {
+        "id": "8d183cf1.ec4b38",
+        "type": "html",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "property": "payload",
+        "outproperty": "payload",
+        "tag": "h3",
+        "ret": "html",
+        "as": "single",
+        "x": 690,
+        "y": 80,
+        "wires": [
+            [
+                "e3c51916.47b7f8"
+            ]
+        ]
+    },
+    {
+        "id": "e3c51916.47b7f8",
+        "type": "function",
+        "z": "7e3966ad.fb178",
+        "name": "get state",
+        "func": "var msg1 = {};\n\n\nmsg1.payload = parseFloat(msg.payload[0].split(\": \")[1]);\n\n\nreturn [msg1];",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 700,
+        "y": 120,
+        "wires": [
+            [
+                "cb2778ac.9e3328"
+            ]
+        ]
+    },
+    {
+        "id": "cb2778ac.9e3328",
+        "type": "change",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "grey",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "yellow",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 160,
+        "wires": [
+            [
+                "c62220a5.3f9f28"
+            ]
+        ]
+    },
+    {
+        "id": "5d0fd21c.0a6ad4",
+        "type": "ui_text",
+        "z": "7e3966ad.fb178",
+        "group": "bb73f5e2.f24cd",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.topic}}",
+        "layout": "row-left",
+        "x": 490,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "4076186c.b99bc8",
+        "type": "ui_text",
+        "z": "7e3966ad.fb178",
+        "group": "bb73f5e2.f24cd",
+        "order": 6,
+        "width": "2",
+        "height": "1",
+        "name": "indicator",
+        "label": "LED 2",
+        "format": "<font color={{msg.payload}} ><i class=\"fa fa-lightbulb-o fa-2x\" style=\"font-size:48px;\"></i></font>",
+        "layout": "row-spread",
+        "x": 500,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "d6f77432.847fa8",
+        "type": "change",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "c3ccc626.41bec"
+            ]
+        ]
+    },
+    {
+        "id": "c9b06e5c.c430a",
+        "type": "schedex",
+        "z": "7e3966ad.fb178",
+        "name": "gh3 timer 2",
+        "suspended": false,
+        "lat": "52.37143972274518",
+        "lon": "5.214771426766971",
+        "ontime": "15:00",
+        "ontopic": "Timer on",
+        "onpayload": "yellow",
+        "onoffset": 0,
+        "onrandomoffset": 0,
+        "offtime": "21:00",
+        "offtopic": "Timer off",
+        "offpayload": "gray",
+        "offoffset": 0,
+        "offrandomoffset": 0,
+        "mon": true,
+        "tue": true,
+        "wed": true,
+        "thu": true,
+        "fri": true,
+        "sat": true,
+        "sun": true,
+        "x": 170,
+        "y": 340,
+        "wires": [
+            [
+                "5d0fd21c.0a6ad4",
+                "4076186c.b99bc8",
+                "d6f77432.847fa8"
+            ]
+        ]
+    },
+    {
+        "id": "ec2b9911.b66dc8",
+        "type": "html",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "property": "payload",
+        "outproperty": "payload",
+        "tag": "h3",
+        "ret": "html",
+        "as": "single",
+        "x": 690,
+        "y": 260,
+        "wires": [
+            [
+                "35a4467f.46054a"
+            ]
+        ]
+    },
+    {
+        "id": "35a4467f.46054a",
+        "type": "function",
+        "z": "7e3966ad.fb178",
+        "name": "get state",
+        "func": "var msg1 = {};\n\n\nmsg1.payload = parseFloat(msg.payload[0].split(\": \")[1]);\n\n\nreturn [msg1];",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 700,
+        "y": 300,
+        "wires": [
+            [
+                "e4b1cb95.c2304"
+            ]
+        ]
+    },
+    {
+        "id": "e4b1cb95.c2304",
+        "type": "change",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "grey",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "yellow",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 340,
+        "wires": [
+            [
+                "4076186c.b99bc8"
+            ]
+        ]
+    },
+    {
+        "id": "f07ff2d9.791f8",
+        "type": "ui_text",
+        "z": "7e3966ad.fb178",
+        "group": "bb73f5e2.f24cd",
+        "order": 8,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.topic}}",
+        "layout": "row-left",
+        "x": 490,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "e23c9b37.260ba8",
+        "type": "ui_text",
+        "z": "7e3966ad.fb178",
+        "group": "bb73f5e2.f24cd",
+        "order": 9,
+        "width": "2",
+        "height": "1",
+        "name": "indicator",
+        "label": "LED 3",
+        "format": "<font color={{msg.payload}} ><i class=\"fa fa-lightbulb-o fa-2x\" style=\"font-size:48px;\"></i></font>",
+        "layout": "row-spread",
+        "x": 500,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "80a9c2ac.31a598",
+        "type": "change",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 460,
+        "wires": [
+            [
+                "498b28d9.de839"
+            ]
+        ]
+    },
+    {
+        "id": "2c8f110.f8a77f",
+        "type": "schedex",
+        "z": "7e3966ad.fb178",
+        "name": "gh3 timer 3",
+        "suspended": false,
+        "lat": "52.37143972274518",
+        "lon": "5.214771426766971",
+        "ontime": "21:00",
+        "ontopic": "Timer on",
+        "onpayload": "yellow",
+        "onoffset": 0,
+        "onrandomoffset": 0,
+        "offtime": "03:00",
+        "offtopic": "Timer off",
+        "offpayload": "gray",
+        "offoffset": 0,
+        "offrandomoffset": 0,
+        "mon": true,
+        "tue": true,
+        "wed": true,
+        "thu": true,
+        "fri": true,
+        "sat": true,
+        "sun": true,
+        "x": 170,
+        "y": 520,
+        "wires": [
+            [
+                "f07ff2d9.791f8",
+                "e23c9b37.260ba8",
+                "80a9c2ac.31a598"
+            ]
+        ]
+    },
+    {
+        "id": "172a2f63.64acd9",
+        "type": "html",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "property": "payload",
+        "outproperty": "payload",
+        "tag": "h3",
+        "ret": "html",
+        "as": "single",
+        "x": 690,
+        "y": 440,
+        "wires": [
+            [
+                "3d75de06.6e76da"
+            ]
+        ]
+    },
+    {
+        "id": "3d75de06.6e76da",
+        "type": "function",
+        "z": "7e3966ad.fb178",
+        "name": "get state",
+        "func": "var msg1 = {};\n\n\nmsg1.payload = parseFloat(msg.payload[0].split(\": \")[1]);\n\n\nreturn [msg1];",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 700,
+        "y": 480,
+        "wires": [
+            [
+                "d765abf1.e4fd7"
+            ]
+        ]
+    },
+    {
+        "id": "d765abf1.e4fd7",
+        "type": "change",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "grey",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "yellow",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 520,
+        "wires": [
+            [
+                "e23c9b37.260ba8"
+            ]
+        ]
+    },
+    {
+        "id": "85432665.b6d47",
+        "type": "ui_text",
+        "z": "7e3966ad.fb178",
+        "group": "bb73f5e2.f24cd",
+        "order": 11,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.topic}}",
+        "layout": "row-left",
+        "x": 490,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "a8b8b505.87739",
+        "type": "ui_text",
+        "z": "7e3966ad.fb178",
+        "group": "bb73f5e2.f24cd",
+        "order": 12,
+        "width": "2",
+        "height": "1",
+        "name": "indicator",
+        "label": "LED 4",
+        "format": "<font color={{msg.payload}} ><i class=\"fa fa-lightbulb-o fa-2x\" style=\"font-size:48px;\"></i></font>",
+        "layout": "row-spread",
+        "x": 500,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "4c808be6.eeaa74",
+        "type": "change",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 640,
+        "wires": [
+            [
+                "9a94c973.5c069"
+            ]
+        ]
+    },
+    {
+        "id": "26e557a1.24cee",
+        "type": "schedex",
+        "z": "7e3966ad.fb178",
+        "name": "gh3 timer 4",
+        "suspended": false,
+        "lat": "52.37143972274518",
+        "lon": "5.214771426766971",
+        "ontime": "03:00",
+        "ontopic": "Timer on",
+        "onpayload": "yellow",
+        "onoffset": 0,
+        "onrandomoffset": 0,
+        "offtime": "09:00",
+        "offtopic": "Timer off",
+        "offpayload": "gray",
+        "offoffset": 0,
+        "offrandomoffset": 0,
+        "mon": true,
+        "tue": true,
+        "wed": true,
+        "thu": true,
+        "fri": true,
+        "sat": true,
+        "sun": true,
+        "x": 170,
+        "y": 700,
+        "wires": [
+            [
+                "85432665.b6d47",
+                "a8b8b505.87739",
+                "4c808be6.eeaa74"
+            ]
+        ]
+    },
+    {
+        "id": "2758b006.224d28",
+        "type": "html",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "property": "payload",
+        "outproperty": "payload",
+        "tag": "h3",
+        "ret": "html",
+        "as": "single",
+        "x": 690,
+        "y": 620,
+        "wires": [
+            [
+                "3128bd53.74a4f2"
+            ]
+        ]
+    },
+    {
+        "id": "3128bd53.74a4f2",
+        "type": "function",
+        "z": "7e3966ad.fb178",
+        "name": "get state",
+        "func": "var msg1 = {};\n\n\nmsg1.payload = parseFloat(msg.payload[0].split(\": \")[1]);\n\n\nreturn [msg1];",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 700,
+        "y": 660,
+        "wires": [
+            [
+                "9a23a1b.25af4e"
+            ]
+        ]
+    },
+    {
+        "id": "9a23a1b.25af4e",
+        "type": "change",
+        "z": "7e3966ad.fb178",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "grey",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "yellow",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 700,
+        "wires": [
+            [
+                "a8b8b505.87739"
+            ]
+        ]
+    },
+    {
+        "id": "bb73f5e2.f24cd",
+        "type": "ui_group",
+        "z": "",
+        "name": "GH3",
+        "tab": "a4760dde.93ceb8",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a4760dde.93ceb8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Settings",
+        "icon": "settings",
+        "order": 1
+    }
+]
