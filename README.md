@@ -1,4 +1,5 @@
 # GH03
+![Diagram](https://github.com/Allday3D/GH03/branch/path/to/gh03_enc28j60_07.jpg)
 
 ## ENC28J60 on a Nano (ATmega328P) as webserver
 Control it with a browser on your computer, tablet or mobil or maybe with the timer example on Node-RED.
