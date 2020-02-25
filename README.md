@@ -6,7 +6,7 @@ Or use the four manual-override buttons to control the four relays.
 Nothing fancy with the simple code and Node-RED example that needs to cleaned up, made beter or even shorter.
 But for now, it works.
 
-![Diagram](https://github.com/Allday3D/GH03/blob/master/flow_dashboard.jpg)
+![Diagram](https://github.com/Allday3D/GH03/blob/master/flow_dashboard.JPG)
 
 ## The Hardware
 The project is based on the ENC28J60, placed on a Nano (ATmega328P).
