@@ -15,9 +15,8 @@ The project is based on the
 - ENC28J60,
 
 placed on a
-
 - Nano (ATmega328P).
-
+Side components are
 - SSD1306 OLED.
 - 4 way relayboard.
 - MP1584EN module.
