@@ -5,7 +5,7 @@ Control it with a browser on your computer, tablet or mobil or maybe with the ti
 Or use the four manual-override buttons to control the four relays.
 
 This program is part of many different sketch examples from many different sources, like the clock from the ssd1306 examples and is primarily just a learning case.
-Made this a year ago and have been running now for a year without any problem.
+Made this a year ago (2019) and have been running now for a year (feb-2020) without any problem. (save to say, it works)
 Nothing fancy with the simple code and Node-RED example that needs to cleaned up, made beter or even shorter.
 But for now, it works.
 
