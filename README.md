@@ -37,7 +37,7 @@ https://flows.nodered.org/node/node-red-contrib-schedex
 
 ## To Do
 
-https://github.com/itavero/EtherCard-MDNS What about using MDNS!?
+What about using MDNS!? - https://github.com/itavero/EtherCard-MDNS 
 
 Webpage!? Or at least a bit more info.
 
