@@ -16,6 +16,7 @@ The project is based on the
 
 placed on a
 - Nano (ATmega328P).
+
 Side components are
 - SSD1306 OLED.
 - 4 way relayboard.
