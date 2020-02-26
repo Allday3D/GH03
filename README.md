@@ -3,7 +3,8 @@
 ## ENC28J60 on a Nano (ATmega328P) as webserver
 Control it with a browser on your computer, tablet or mobil or maybe with the timer example on Node-RED.
 Or use the four manual-override buttons to control the four relays.
-This program is part of many different sketch examples from many different sources, like the clock from the ssd1306 examples and is basicly just a learning case.
+
+This program is part of many different sketch examples from many different sources, like the clock from the ssd1306 examples and is primarily just a learning case.
 Made this a year ago and have been running now for a year without any problem.
 Nothing fancy with the simple code and Node-RED example that needs to cleaned up, made beter or even shorter.
 But for now, it works.
