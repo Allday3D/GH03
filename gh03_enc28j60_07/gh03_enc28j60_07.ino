@@ -3,6 +3,25 @@
 // add button 19-01-2019
 // add ntp time 21-01-2019
 // add LM35 25-01-2019
+//
+// -------------------------------------------------------------------------------
+// This is the Arduino program - To be uploaded to Arduino
+//
+// Copyright (C) 2020 AD3D
+// Check out my page https://www.allday-3d.com/gh03_develop.html
+//
+//    This program is free software: you can redistribute it and/or modify
+//    it under the terms of the GNU Affero General Public License as published by
+//    the Free Software Foundation, either version 3 of the License, or
+//    (at your option) any later version.
+//
+//    This program is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU General Public License for more details.
+//
+//    You should have received a copy of the GNU Affero General Public License
+//    along with this program.  If not, see <https://www.gnu.org/licenses/agpl-3.0.en.html>.
 
 // -------------------------------------------------------------------------------
 
@@ -600,7 +619,7 @@ if ((uint32_t)(millis() - lastMillis) >= 1000)
     Serial.print(seconds);
     Serial.println(" ");
 
-   if (hours == 3 && minutes == 1 && seconds == 10) 
+   if (hours == 11 && minutes == 59 && seconds == 59) 
                      {
                        startNtp();
                        printNowDate();
