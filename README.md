@@ -3,6 +3,8 @@
 ## ENC28J60 on a Nano (ATmega328P) as webserver
 Control it with a browser on your computer, tablet or mobil or maybe with the timer example on Node-RED.
 Or use the four manual-override buttons to control the four relays.
+This program is part of many different sketch examples from many different sources, like the clock from the ssd1306 examples and is basicly just a learning case.
+Made this a year ago and have been running now for a year without any problem.
 Nothing fancy with the simple code and Node-RED example that needs to cleaned up, made beter or even shorter.
 But for now, it works.
 
@@ -15,6 +17,7 @@ The project is based on the
 placed on a
 
 - Nano (ATmega328P).
+- SSD1306 OLED.
 - 4 way relayboard.
 - MP1584EN module.
 - Four switches (4 buttons and 10K resistors).
@@ -44,6 +47,9 @@ Webpage!? Or at least a bit more info.
 ![Web view](https://github.com/Allday3D/GH03/blob/master/web_view.jpg)
 
 That time thing. NTP request at midnight.
+
+Sketch uses 25192 bytes (82%) of program storage space. Maximum is 30720 bytes.
+Global variables use 1472 bytes (71%) of dynamic memory, leaving 576 bytes for local variables. Maximum is 2048 bytes.
 
 
 
